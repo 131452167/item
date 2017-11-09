@@ -1,0 +1,1450 @@
+@charset "UTF-8";
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre,
+form, fieldset, input, textarea, p, blockquote, th, td {
+  padding: 0;
+  margin: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+fieldset, img {
+  border: 0; }
+
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-weight: normal;
+  font-style: normal; }
+
+ol, ul, li {
+  list-style: none; }
+
+caption, th {
+  text-align: left; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  font-size: 100%; }
+
+q:before, q:after {
+  content: ''; }
+
+abbr, acronym {
+  border: 0; }
+
+a {
+  text-decoration: none;
+  font-size: 12px; }
+
+body {
+  width: 100%; }
+
+.clearFix::after {
+  content: '';
+  display: block;
+  clear: both; }
+
+.fxd {
+  width: 42px;
+  height: 100%;
+  background: #333;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 9999; }
+  .fxd p {
+    padding: 11px 7px;
+    position: relative; }
+    .fxd p:hover {
+      background-color: #ff7200; }
+    .fxd p:hover i {
+      background-position: -86px 0; }
+    .fxd p:hover span {
+      opacity: 1;
+      visibility: visible;
+      left: -106px; }
+    .fxd p:hover .spn {
+      left: -110px; }
+    .fxd p i {
+      display: block;
+      background: url("../images/1.png") no-repeat -57px 0;
+      width: 28px;
+      height: 28px; }
+    .fxd p .spn {
+      display: block;
+      width: 110px;
+      height: 110px;
+      background: #333 url(../images/8.jpg) no-repeat center center;
+      top: -30px; }
+    .fxd p span {
+      background-color: #636363;
+      position: absolute;
+      top: 0;
+      left: -141px;
+      color: #fff;
+      text-align: center;
+      line-height: 49px;
+      font-size: 14px;
+      cursor: pointer;
+      width: 106px;
+      height: 50px;
+      opacity: 0;
+      display: block;
+      visibility: hidden;
+      right: 77px;
+      transition: all 0.5s ease-in-out; }
+      .fxd p span b {
+        position: absolute;
+        top: 50%;
+        right: -5px;
+        background: url("../images/1.png") no-repeat 0 -16px;
+        width: 5px;
+        height: 10px;
+        margin-top: -5px; }
+  .fxd .fxd-top {
+    position: absolute;
+    top: 85px;
+    background: #333; }
+    .fxd .fxd-top p:nth-child(2) i {
+      background-position: -57px -232px; }
+    .fxd .fxd-top p:nth-child(2):hover i {
+      background-position: -86px -232px; }
+    .fxd .fxd-top p:nth-child(3) i {
+      background-position: -57px -29px; }
+    .fxd .fxd-top p:nth-child(3):hover i {
+      background-position: -86px -29px; }
+    .fxd .fxd-top p:nth-child(4) i {
+      background-position: -57px -261px; }
+    .fxd .fxd-top p:nth-child(4):hover i {
+      background-position: -86px -261px; }
+  .fxd .fxd-bottom {
+    position: absolute;
+    bottom: 0px;
+    background: #333; }
+    .fxd .fxd-bottom p:nth-child(1) {
+      display: none; }
+      .fxd .fxd-bottom p:nth-child(1) i {
+        background-position: -57px 0; }
+      .fxd .fxd-bottom p:nth-child(1):hover i {
+        background-position: -86px 0; }
+    .fxd .fxd-bottom p:nth-child(2) i {
+      background-position: -57px -58px; }
+    .fxd .fxd-bottom p:nth-child(2):hover i {
+      background-position: -86px -58px; }
+    .fxd .fxd-bottom p:nth-child(3) i {
+      background-position: -57px -116px; }
+    .fxd .fxd-bottom p:nth-child(3):hover i {
+      background-position: -86px -116px; }
+    .fxd .fxd-bottom p:nth-child(4) i {
+      background-position: -57px -87px; }
+    .fxd .fxd-bottom p:nth-child(4):hover i {
+      background-position: -86px -87px; }
+    .fxd .fxd-bottom p:nth-child(5) i {
+      background-position: -57px -145px; }
+    .fxd .fxd-bottom p:nth-child(5):hover i {
+      background-position: -86px -145px; }
+    .fxd .fxd-bottom .p1 {
+      display: block; }
+    .fxd .fxd-bottom .p2 {
+      display: none; }
+    .fxd .fxd-bottom p:nth-child(6) i {
+      background-position: -57px -174px; }
+    .fxd .fxd-bottom p:nth-child(6):hover i {
+      background-position: -86px -174px; }
+    .fxd .fxd-bottom p:nth-child(7) {
+      display: none; }
+      .fxd .fxd-bottom p:nth-child(7) i {
+        background-position: -57px -203px; }
+      .fxd .fxd-bottom p:nth-child(7):hover i {
+        background-position: -86px -203px; }
+
+nav .nav1 {
+  border-bottom: 1px solid #ddd;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box; }
+
+nav .top {
+  width: 1240px;
+  margin: 0px auto; }
+  nav .top .top-left, nav .top .top-right {
+    float: left;
+    height: 30px;
+    line-height: 30px; }
+    nav .top .top-left a, nav .top .top-right a {
+      color: #666; }
+      nav .top .top-left a:hover, nav .top .top-right a:hover {
+        color: #ff6e00; }
+    nav .top .top-left .a1, nav .top .top-right .a1 {
+      color: #ff6e00; }
+    nav .top .top-left .a1:after, nav .top .top-right .a1:after {
+      content: '|';
+      font-size: 12px;
+      color: #ddd;
+      margin: 0 13px 0 13px; }
+  nav .top .top-right {
+    float: right; }
+    nav .top .top-right .a2:after {
+      content: '|';
+      font-size: 12px;
+      color: #ddd;
+      margin: 0 13px 0 13px; }
+    nav .top .top-right i {
+      display: inline-block;
+      background: url("../images/1.png") no-repeat -42px -19px;
+      width: 14px;
+      height: 12px;
+      margin-right: 3px; }
+
+nav .center {
+  width: 1240px;
+  margin: 0px auto;
+  height: 93px;
+  margin-bottom: 5px; }
+  nav .center a {
+    display: inline-block;
+    float: left; }
+    nav .center a img {
+      vertical-align: middle;
+      outline: none; }
+  nav .center .a3 {
+    float: right;
+    margin-top: 21px; }
+  nav .center .search {
+    float: left;
+    width: 568px;
+    height: 35px;
+    margin: 31px 0px 0px 135px;
+    border: 2px solid #ff7200;
+    position: relative; }
+    nav .center .search span {
+      font-size: 14px;
+      color: #ff7200;
+      width: 103px;
+      height: 35px;
+      float: left;
+      line-height: 35px;
+      border-right: 1px solid #ff7200;
+      text-align: center;
+      display: block;
+      cursor: pointer;
+      position: relative; }
+      nav .center .search span:hover i {
+        transform: rotate(180deg);
+        transition-duration: 0.3s; }
+      nav .center .search span i {
+        display: inline-block;
+        background: url("../images/1.png") no-repeat 0 0;
+        width: 10px;
+        transition-duration: 0.3s;
+        height: 7px;
+        margin-left: 10px; }
+      nav .center .search span .drop-down {
+        position: absolute;
+        width: 103px;
+        top: 35px;
+        left: -1px;
+        z-index: 21;
+        background-color: #fff;
+        border: 1px solid #ff7200;
+        border-top: 2px solid #ff7200;
+        display: none;
+        text-align: left; }
+        nav .center .search span .drop-down p {
+          height: 28px;
+          line-height: 28px;
+          padding-left: 11px;
+          color: #666;
+          font-size: 14px;
+          cursor: pointer; }
+          nav .center .search span .drop-down p:hover {
+            background-color: #f5f5f5;
+            color: #f60; }
+    nav .center .search input {
+      float: left;
+      width: 366px;
+      padding: 6px 10px 5px 10px;
+      border: 0;
+      height: 24px;
+      line-height: 24px;
+      outline: none; }
+    nav .center .search .a4 {
+      float: right;
+      color: #fff;
+      display: inline-block;
+      width: 78px;
+      background-color: #ff7200;
+      text-align: center;
+      height: 35px;
+      line-height: 35px; }
+    nav .center .search .sokey {
+      position: absolute;
+      right: 87px;
+      top: 8px; }
+      nav .center .search .sokey a {
+        display: inline-block;
+        font-size: 14px;
+        border-radius: 5px;
+        padding: 0 5px;
+        background-color: #f2f2f2;
+        color: #999;
+        margin-left: 10px;
+        cursor: pointer; }
+
+nav .nav3 {
+  height: 36px;
+  border-bottom: 2px solid #ff6e00; }
+  nav .nav3 .bottom {
+    width: 1240px;
+    margin: 0px auto; }
+    nav .nav3 .bottom .a5 {
+      background-color: #ff6e00;
+      color: #fff; }
+      nav .nav3 .bottom .a5:hover {
+        background-color: #ff6e00;
+        color: #fff; }
+    nav .nav3 .bottom .a6 {
+      position: relative; }
+      nav .nav3 .bottom .a6:hover i {
+        transform: rotate(180deg);
+        background-position: -12px -25px; }
+      nav .nav3 .bottom .a6 i {
+        background: url("../images/3.png") no-repeat -12px -9px;
+        width: 9px;
+        height: 5px;
+        margin-left: 7px;
+        vertical-align: middle;
+        display: inline-block;
+        transition: transform 0.3s; }
+      nav .nav3 .bottom .a6 div {
+        position: absolute;
+        top: 36px;
+        left: 0;
+        z-index: 2000;
+        width: 100%;
+        display: none;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25); }
+        nav .nav3 .bottom .a6 div span {
+          display: block;
+          text-align: center;
+          font-size: 14px;
+          color: #666;
+          width: 100%;
+          display: block;
+          background-color: #fff;
+          height: 45px;
+          line-height: 45px;
+          border-bottom: 1px solid #ddd; }
+          nav .nav3 .bottom .a6 div span:hover {
+            background: #ff6e00;
+            color: #fff; }
+    nav .nav3 .bottom a {
+      display: block;
+      float: left;
+      height: 28px;
+      padding: 8px 27px 0;
+      font-size: 16px;
+      color: #333; }
+      nav .nav3 .bottom a:hover {
+        color: #f60;
+        background-color: #f5f5f5; }
+
+header {
+  position: relative; }
+  header .tacitly {
+    width: 100%;
+    height: 400px;
+    overflow: hidden; }
+    header .tacitly a {
+      display: block;
+      width: 100%;
+      height: 400px; }
+    header .tacitly .a7 {
+      background: url(../images/2.jpg) no-repeat center center; }
+    header .tacitly .a8 {
+      background: url(../images/3.jpg) no-repeat center center; }
+    header .tacitly .a9 {
+      background: url(../images/4.jpg) no-repeat center center; }
+    header .tacitly .a10 {
+      background: url(../images/5.jpg) no-repeat center center; }
+    header .tacitly .a11 {
+      background: url(../images/6.jpg) no-repeat center center; }
+    header .tacitly .a12 {
+      background: url(../images/7.jpg) no-repeat center center; }
+    header .tacitly .paging {
+      width: 140px;
+      height: 17px;
+      line-height: 17px;
+      left: 65%;
+      bottom: 20px;
+      border-radius: 50px;
+      background: rgba(0, 0, 0, 0.3); }
+      header .tacitly .paging span {
+        display: inline-block;
+        width: 11px;
+        background: #ddd;
+        height: 11px;
+        margin: 3px 5px !important; }
+  header .global {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    width: 494px;
+    height: 360px;
+    z-index: 1001;
+    margin: 20px 0;
+    margin-left: -620px;
+    background: #fff; }
+    header .global .global-left {
+      float: left; }
+      header .global .global-left p {
+        width: 90px;
+        height: 90px;
+        background-color: #465259;
+        color: #fff;
+        font-size: 16px;
+        text-align: center;
+        overflow: hidden;
+        cursor: pointer;
+        vertical-align: top;
+        box-sizing: border-box;
+        border-bottom: 1px solid #6b757a; }
+        header .global .global-left p i {
+          display: block;
+          margin: 25px auto 3px;
+          background: url("../images/5.png") no-repeat -1px 0;
+          width: 19px;
+          height: 19px; }
+        header .global .global-left p:hover, header .global .global-left p .pw {
+          background: #fff;
+          color: #f60; }
+        header .global .global-left p:hover i {
+          background-position: -34px 0; }
+      header .global .global-left p:nth-child(1) {
+        background: #fff;
+        color: #f60; }
+        header .global .global-left p:nth-child(1) i, header .global .global-left p:nth-child(1) .pw1 {
+          background-position: -34px 0; }
+      header .global .global-left p:nth-child(2) i {
+        background-position: -1px -33px;
+        width: 24px;
+        height: 16px; }
+      header .global .global-left p:nth-child(2):hover i, header .global .global-left p:nth-child(2) .pw2 {
+        background-position: -34px -33px; }
+      header .global .global-left p:nth-child(3) i {
+        background-position: -1px -65px;
+        width: 20px;
+        height: 18px; }
+      header .global .global-left p:nth-child(3):hover i, header .global .global-left p:nth-child(3) .pw3 {
+        background-position: -34px -65px; }
+      header .global .global-left p:nth-child(4) {
+        border: none; }
+        header .global .global-left p:nth-child(4) i {
+          background-position: -1px -341px;
+          width: 19px;
+          height: 21px; }
+        header .global .global-left p:nth-child(4):hover i, header .global .global-left p:nth-child(4) .pw4 {
+          background-position: -34px -341px; }
+    header .global .global-right {
+      float: left;
+      width: 404px;
+      height: 360px; }
+      header .global .global-right .global-box:nth-child(1) {
+        display: block; }
+      header .global .global-right .global-box {
+        display: none;
+        position: absolute;
+        right: 0px;
+        padding: 20px 37px;
+        width: 330px; }
+        header .global .global-right .global-box .global-box1-top, header .global .global-right .global-box .global-box2-top {
+          border-bottom: 1px solid #ddd;
+          position: relative;
+          margin-bottom: 23px; }
+          header .global .global-right .global-box .global-box1-top p, header .global .global-right .global-box .global-box2-top p {
+            width: 350px; }
+            header .global .global-right .global-box .global-box1-top p span:nth-child(1), header .global .global-right .global-box .global-box2-top p span:nth-child(1) {
+              color: #f60; }
+            header .global .global-right .global-box .global-box1-top p span, header .global .global-right .global-box .global-box2-top p span {
+              display: inline-block;
+              margin-right: 18px;
+              font-size: 16px;
+              color: #666;
+              padding: 0 9px 20px;
+              cursor: pointer;
+              height: 20px;
+              line-height: 20px;
+              overflow: hidden; }
+          header .global .global-right .global-box .global-box1-top section i:nth-child(1), header .global .global-right .global-box .global-box2-top section i:nth-child(1) {
+            display: block; }
+          header .global .global-right .global-box .global-box1-top section i, header .global .global-right .global-box .global-box2-top section i {
+            display: none;
+            width: 120px;
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            height: 4px;
+            background-color: #ff6e00;
+            transition: all 200ms ease-in-out;
+            overflow: hidden; }
+          header .global .global-right .global-box .global-box1-top section i:nth-child(2), header .global .global-right .global-box .global-box2-top section i:nth-child(2) {
+            width: 82px;
+            left: 140.234px; }
+          header .global .global-right .global-box .global-box1-top section i:nth-child(3), header .global .global-right .global-box .global-box2-top section i:nth-child(3) {
+            width: 82px;
+            left: 247.234px; }
+        header .global .global-right .global-box .global-box1-bottom div:nth-child(1) {
+          display: block; }
+        header .global .global-right .global-box .global-box1-bottom div {
+          display: none; }
+          header .global .global-right .global-box .global-box1-bottom div p {
+            height: 38px;
+            line-height: 38px;
+            margin-bottom: 10px;
+            position: relative; }
+            header .global .global-right .global-box .global-box1-bottom div p label {
+              width: 58px;
+              float: left;
+              text-align: right;
+              font-size: 14px;
+              color: #aaa; }
+            header .global .global-right .global-box .global-box1-bottom div p input {
+              float: right;
+              width: 235px;
+              height: 20px;
+              padding: 8px 11px;
+              line-height: 20px;
+              border: 1px solid #ddd;
+              font-size: 14px;
+              color: #666;
+              outline: none; }
+        header .global .global-right .global-box .global-box1-bottom section {
+          text-align: right;
+          margin-top: 20px; }
+          header .global .global-right .global-box .global-box1-bottom section a {
+            display: inline-block;
+            width: 132px;
+            height: 42px;
+            text-align: center;
+            line-height: 42px;
+            background-color: #ff6e00;
+            border-radius: 5px;
+            font-size: 16px;
+            color: #fff; }
+            header .global .global-right .global-box .global-box1-bottom section a em {
+              font-family: 'simsun';
+              margin-left: 10px; }
+          header .global .global-right .global-box .global-box1-bottom section span {
+            float: left;
+            margin-top: 25px;
+            font-size: 14px;
+            color: #74be21;
+            text-decoration: underline; }
+        header .global .global-right .global-box .global-box2-top section i:nth-child(1) {
+          display: block; }
+        header .global .global-right .global-box .global-box2-top section i {
+          display: none;
+          position: absolute;
+          width: 82px;
+          left: 0px;
+          bottom: -2px;
+          height: 4px;
+          background-color: #ff6e00;
+          transition: all 200ms ease-in-out;
+          overflow: hidden; }
+        header .global .global-right .global-box .global-box2-top section i:nth-child(2) {
+          left: 105px; }
+        header .global .global-right .global-box .global-box2-bottom div:nth-child(1) {
+          display: block; }
+        header .global .global-right .global-box .global-box2-bottom div {
+          display: none; }
+          header .global .global-right .global-box .global-box2-bottom div .text-1 {
+            padding-top: 50px;
+            font-size: 18px;
+            color: #666; }
+          header .global .global-right .global-box .global-box2-bottom div .text-2 {
+            padding: 40px 20px 0;
+            font-size: 16px;
+            line-height: 22px;
+            color: #666; }
+          header .global .global-right .global-box .global-box2-bottom div .text-3 {
+            padding: 30px 20px 0;
+            font-size: 16px;
+            color: #666; }
+          header .global .global-right .global-box .global-box2-bottom div .sou {
+            width: 325px;
+            margin-top: 10px; }
+            header .global .global-right .global-box .global-box2-bottom div .sou a {
+              float: right;
+              display: inline-block;
+              width: 132px;
+              height: 42px;
+              text-align: center;
+              line-height: 42px;
+              background-color: #ff6e00;
+              border-radius: 5px;
+              font-size: 16px;
+              color: #fff; }
+              header .global .global-right .global-box .global-box2-bottom div .sou a em {
+                font-family: 'simsun';
+                margin-left: 10px; }
+            header .global .global-right .global-box .global-box2-bottom div .sou span {
+              float: left;
+              margin-top: 25px;
+              font-size: 14px;
+              color: #74be21;
+              text-decoration: underline; }
+          header .global .global-right .global-box .global-box2-bottom div span {
+            display: block;
+            margin-bottom: 10px; }
+            header .global .global-right .global-box .global-box2-bottom div span p {
+              float: left;
+              margin-right: 35px;
+              line-height: 20px;
+              height: 20px;
+              position: relative; }
+              header .global .global-right .global-box .global-box2-bottom div span p input {
+                vertical-align: middle;
+                opacity: 1;
+                position: absolute;
+                left: -2px;
+                top: 2px;
+                z-index: 10;
+                width: 16px;
+                height: 16px; }
+              header .global .global-right .global-box .global-box2-bottom div span p label {
+                width: 30px;
+                font-size: 14px;
+                color: #666;
+                padding-left: 20px; }
+              header .global .global-right .global-box .global-box2-bottom div span p i {
+                background: url(../images/5.png) no-repeat;
+                position: absolute;
+                left: 50px;
+                top: 2px;
+                width: 16px;
+                height: 16px;
+                background-position: 0 -140px; }
+              header .global .global-right .global-box .global-box2-bottom div span p .i4 {
+                left: -2px;
+                background-position: -1px -166px; }
+          header .global .global-right .global-box .global-box2-bottom div section {
+            position: relative;
+            float: left;
+            margin-top: 10px; }
+            header .global .global-right .global-box .global-box2-bottom div section label {
+              width: auto;
+              height: 24px;
+              line-height: 24px;
+              text-align: left;
+              display: block;
+              font-size: 14px;
+              color: #aaa; }
+            header .global .global-right .global-box .global-box2-bottom div section input {
+              width: 122px;
+              height: 20px;
+              padding: 8px 11px;
+              line-height: 20px;
+              border: 1px solid #ddd;
+              font-size: 14px;
+              color: #666; }
+          header .global .global-right .global-box .global-box2-bottom div .i3 {
+            display: inline-block;
+            background: url(../images/5.png) no-repeat -34px -93px;
+            float: left;
+            width: 31px;
+            height: 21px;
+            margin: 42px 0 0 3px;
+            cursor: pointer; }
+        header .global .global-right .global-box .global-box3-top {
+          border-bottom: 1px solid #ddd;
+          position: relative;
+          margin-bottom: 23px; }
+          header .global .global-right .global-box .global-box3-top p {
+            width: 350px; }
+            header .global .global-right .global-box .global-box3-top p span:nth-child(1) {
+              color: #f60; }
+            header .global .global-right .global-box .global-box3-top p span {
+              display: inline-block;
+              margin-right: 40px;
+              font-size: 16px;
+              color: #666;
+              padding: 0 9px 20px;
+              cursor: pointer;
+              height: 20px;
+              line-height: 20px;
+              overflow: hidden; }
+          header .global .global-right .global-box .global-box3-top section i:nth-child(1) {
+            display: block; }
+          header .global .global-right .global-box .global-box3-top section i {
+            display: none;
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            width: 66px;
+            height: 4px;
+            background-color: #ff6e00;
+            transition: all 200ms ease-in-out;
+            overflow: hidden; }
+          header .global .global-right .global-box .global-box3-top section i:nth-child(2) {
+            width: 66px;
+            left: 110px; }
+          header .global .global-right .global-box .global-box3-top section i:nth-child(3) {
+            width: 66px;
+            left: 220px; }
+        header .global .global-right .global-box .global-box3-bottom .box3-bottom:nth-child(1) {
+          display: block; }
+        header .global .global-right .global-box .global-box3-bottom .box3-bottom {
+          display: none; }
+          header .global .global-right .global-box .global-box3-bottom .box3-bottom .global-box3-bottomX {
+            height: 38px;
+            line-height: 38px;
+            margin-bottom: 10px;
+            position: relative; }
+            header .global .global-right .global-box .global-box3-bottom .box3-bottom .global-box3-bottomX label {
+              width: 58px;
+              text-align: center;
+              font-size: 14px;
+              color: #aaa;
+              margin-right: 10px; }
+            header .global .global-right .global-box .global-box3-bottom .box3-bottom .global-box3-bottomX .lbs {
+              position: relative;
+              display: inline-block; }
+              header .global .global-right .global-box .global-box3-bottom .box3-bottom .global-box3-bottomX .lbs .lb {
+                font-size: 14px;
+                color: #666;
+                padding-left: 20px; }
+              header .global .global-right .global-box .global-box3-bottom .box3-bottom .global-box3-bottomX .lbs .i2 {
+                background: url(../images/5.png) no-repeat;
+                position: absolute;
+                left: 55px;
+                top: 12px;
+                width: 16px;
+                height: 16px;
+                background-position: 0 -140px; }
+              header .global .global-right .global-box .global-box3-bottom .box3-bottom .global-box3-bottomX .lbs .i3 {
+                left: -2px;
+                background-position: -1px -166px; }
+            header .global .global-right .global-box .global-box3-bottom .box3-bottom .global-box3-bottomX input {
+              width: 235px;
+              height: 20px;
+              padding: 8px 11px;
+              line-height: 20px;
+              border: 1px solid #ddd;
+              font-size: 14px;
+              color: #666; }
+          header .global .global-right .global-box .global-box3-bottom .box3-bottom .global-box3-center {
+            text-align: right;
+            margin-bottom: 20px;
+            width: 325px; }
+            header .global .global-right .global-box .global-box3-bottom .box3-bottom .global-box3-center a {
+              display: inline-block;
+              width: 132px;
+              height: 42px;
+              text-align: center;
+              line-height: 42px;
+              background-color: #ff6e00;
+              border-radius: 5px;
+              font-size: 16px;
+              color: #fff;
+              margin-top: 10px; }
+              header .global .global-right .global-box .global-box3-bottom .box3-bottom .global-box3-center a em {
+                font-family: 'simsun';
+                margin-left: 10px; }
+          header .global .global-right .global-box .global-box3-bottom .box3-bottom div {
+            margin-bottom: 15px;
+            height: 44px; }
+            header .global .global-right .global-box .global-box3-bottom .box3-bottom div span {
+              float: left;
+              color: #aaa;
+              font-size: 12px;
+              margin-right: 24px; }
+            header .global .global-right .global-box .global-box3-bottom .box3-bottom div p {
+              width: 258px;
+              float: left; }
+              header .global .global-right .global-box .global-box3-bottom .box3-bottom div p a {
+                vertical-align: top;
+                display: inline-block;
+                color: #666;
+                white-space: nowrap;
+                margin-right: 15px; }
+                header .global .global-right .global-box .global-box3-bottom .box3-bottom div p a:hover {
+                  color: #f60; }
+        header .global .global-right .global-box .global-box4 .global-box4-top {
+          height: 38px;
+          line-height: 38px;
+          margin-bottom: 10px;
+          position: relative; }
+          header .global .global-right .global-box .global-box4 .global-box4-top label {
+            width: 58px;
+            text-align: center;
+            font-size: 14px;
+            color: #aaa;
+            margin-right: 10px; }
+          header .global .global-right .global-box .global-box4 .global-box4-top input {
+            width: 235px;
+            height: 20px;
+            padding: 8px 11px;
+            line-height: 20px;
+            border: 1px solid #ddd;
+            font-size: 14px;
+            color: #666; }
+        header .global .global-right .global-box .global-box4 .global-box4-center {
+          text-align: right;
+          margin-bottom: 40px;
+          width: 325px; }
+          header .global .global-right .global-box .global-box4 .global-box4-center a {
+            display: inline-block;
+            width: 132px;
+            height: 42px;
+            text-align: center;
+            line-height: 42px;
+            background-color: #ff6e00;
+            border-radius: 5px;
+            font-size: 16px;
+            color: #fff;
+            margin-top: 10px; }
+            header .global .global-right .global-box .global-box4 .global-box4-center a em {
+              font-family: 'simsun';
+              margin-left: 10px; }
+        header .global .global-right .global-box .global-box4 div {
+          margin-bottom: 15px;
+          height: 44px; }
+          header .global .global-right .global-box .global-box4 div span {
+            float: left;
+            color: #aaa;
+            font-size: 12px;
+            margin-right: 24px; }
+          header .global .global-right .global-box .global-box4 div p {
+            width: 258px;
+            float: left; }
+            header .global .global-right .global-box .global-box4 div p a {
+              vertical-align: top;
+              display: inline-block;
+              color: #666;
+              white-space: nowrap;
+              margin-right: 15px; }
+              header .global .global-right .global-box .global-box4 div p a:hover {
+                color: #f60; }
+  header .i1 {
+    display: block;
+    background: url("../images/3.png") no-repeat -22px -159px;
+    width: 52px;
+    height: 20px;
+    position: absolute;
+    top: 20px;
+    right: 65px;
+    z-index: 22; }
+  header .notice {
+    width: 100%;
+    overflow: hidden;
+    border-bottom: 1px solid #ddd; }
+    header .notice .notice-box {
+      width: 1240px;
+      line-height: 40px;
+      height: 40px;
+      overflow: hidden;
+      margin: 0 auto;
+      color: #666;
+      font-size: 14px; }
+      header .notice .notice-box i {
+        float: left;
+        display: inline-block;
+        background: url("../images/3.png") no-repeat 0 -136px;
+        width: 16px;
+        height: 15px;
+        margin-top: 13px; }
+      header .notice .notice-box .notice-left {
+        float: left;
+        width: 45%;
+        margin-left: 20px;
+        position: relative;
+        top: 0px; }
+      header .notice .notice-box .notice-right {
+        width: 45%;
+        float: right;
+        text-align: right;
+        position: relative;
+        top: 0px; }
+
+main {
+  width: 1240px;
+  margin: 0px auto; }
+  main .main1 {
+    padding: 28px 0px; }
+    main .main1 h2 {
+      color: #ff6e00;
+      border-bottom: 2px solid #f0f0f0;
+      margin-bottom: 20px;
+      font-size: 20px;
+      padding: 0 4px 10px;
+      font-weight: bold;
+      position: relative;
+      cursor: pointer; }
+      main .main1 h2 i {
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 86px;
+        height: 2px;
+        background-color: #ff6e00;
+        transition: all 200ms ease-in-out; }
+    main .main1 .main1-bottom .main1-box {
+      width: 295px;
+      float: left;
+      height: 220px;
+      margin-right: 20px;
+      overflow: hidden;
+      position: relative; }
+      main .main1 .main1-bottom .main1-box .box {
+        width: 295px;
+        height: 80px;
+        background: rgba(255, 255, 255, 0.85);
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        z-index: 20; }
+        main .main1 .main1-bottom .main1-box .box section {
+          padding: 6px 16px; }
+          main .main1 .main1-bottom .main1-box .box section p {
+            font-size: 14px;
+            color: #333;
+            line-height: 20px;
+            height: 40px;
+            overflow: hidden; }
+          main .main1 .main1-bottom .main1-box .box section span {
+            color: #999;
+            display: inline-block;
+            margin-top: 10px;
+            font-size: 12px; }
+          main .main1 .main1-bottom .main1-box .box section a {
+            float: right;
+            color: #ff6e00; }
+            main .main1 .main1-bottom .main1-box .box section a b {
+              font-size: 24px; }
+  main .main2 {
+    padding-top: 28px; }
+    main .main2 .main2-top {
+      height: 70px;
+      background: url(../images/7.png) left 35px repeat-x; }
+      main .main2 .main2-top h2 {
+        width: 270px;
+        height: 70px;
+        text-indent: -9999px;
+        background: url(../images/6.png) no-repeat #fff 0 -140px;
+        margin: 0 auto; }
+    main .main2 .main3 h2 {
+      background-position: 0 -280px;
+      height: 76px; }
+    main .main2 .main4 h2 {
+      background-position: 0 -70px; }
+    main .main2 .main5 h2 {
+      background-position: 0 0; }
+    main .main2 .main6 h2 {
+      background-position: 0 -210px; }
+    main .main2 .main2-center {
+      padding: 10px 0px;
+      display: table;
+      margin: 0px auto;
+      overflow: hidden; }
+      main .main2 .main2-center .spn1 {
+        color: #f60;
+        border-color: #f60; }
+      main .main2 .main2-center span {
+        height: 23px;
+        line-height: 23px;
+        padding: 0 4px;
+        margin: 0 15px;
+        border-top: 1px solid #fff;
+        border-bottom: 2px solid #fff;
+        text-align: center;
+        font-size: 14px;
+        cursor: pointer; }
+    main .main2 .main2-bottom {
+      height: 599px; }
+      main .main2 .main2-bottom .left1 {
+        background: url(../images/24.jpg) right top no-repeat !important; }
+      main .main2 .main2-bottom .left2 {
+        background: url(../images/25.jpg) right top no-repeat !important; }
+      main .main2 .main2-bottom .left3 {
+        background: url(../images/26.jpg) right top no-repeat !important; }
+      main .main2 .main2-bottom .main2-left {
+        float: left;
+        width: 232px;
+        height: 100%;
+        background: url(../images/23.jpg) right top no-repeat; }
+        main .main2 .main2-bottom .main2-left section {
+          padding: 160px 23px 0; }
+          main .main2 .main2-bottom .main2-left section .a13 {
+            background: rgba(0, 0, 0, 0.1); }
+          main .main2 .main2-bottom .main2-left section a {
+            color: #fff;
+            font-size: 14px;
+            display: inline-block;
+            overflow: hidden;
+            word-break: break-all;
+            word-wrap: break-word;
+            line-height: 22px;
+            margin: 0px 4px;
+            margin-top: 10px;
+            padding: 0px 8px;
+            border-radius: 30px; }
+            main .main2 .main2-bottom .main2-left section a:hover {
+              background: rgba(0, 0, 0, 0.1); }
+      main .main2 .main2-bottom .main2-right {
+        float: left;
+        width: 1008px;
+        height: 597px;
+        border-top: 1px solid #f1f1f1;
+        border-bottom: 1px solid #f1f1f1; }
+        main .main2 .main2-bottom .main2-right div {
+          float: left;
+          position: relative;
+          width: 474px;
+          height: 267px;
+          margin-top: 20px;
+          margin-left: 20px;
+          overflow: hidden; }
+          main .main2 .main2-bottom .main2-right div:hover .prc-cont {
+            bottom: -65px; }
+          main .main2 .main2-bottom .main2-right div:hover .yiru {
+            transform: translateX(0%); }
+          main .main2 .main2-bottom .main2-right div:hover .yiru .title {
+            transform: translateX(0%); }
+          main .main2 .main2-bottom .main2-right div:hover .yiru .fu-title {
+            transform: translateX(0%); }
+          main .main2 .main2-bottom .main2-right div:hover .yiru .prc {
+            transform: scale(1); }
+          main .main2 .main2-bottom .main2-right div:hover .yiru .yuding {
+            transform: translateY(0%); }
+          main .main2 .main2-bottom .main2-right div img {
+            display: block;
+            width: 100%;
+            height: 100%; }
+          main .main2 .main2-bottom .main2-right div .prc-cont {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 434px;
+            height: 46px;
+            padding: 10px 20px;
+            background-color: #fafafa;
+            transition: all .3s ease-out; }
+            main .main2 .main2-bottom .main2-right div .prc-cont .cont {
+              float: left;
+              width: 72%; }
+              main .main2 .main2-bottom .main2-right div .prc-cont .cont .title {
+                font-size: 18px;
+                line-height: 25px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap; }
+              main .main2 .main2-bottom .main2-right div .prc-cont .cont .fu-title {
+                font-size: 14px;
+                color: #999;
+                line-height: 20px;
+                padding-top: 1px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap; }
+            main .main2 .main2-bottom .main2-right div .prc-cont .prc {
+              float: right;
+              width: 25%;
+              color: #ff6e00;
+              padding-top: 10px;
+              text-align: right;
+              overflow: hidden; }
+              main .main2 .main2-bottom .main2-right div .prc-cont .prc b {
+                font-size: 24px; }
+          main .main2 .main2-bottom .main2-right div .yiru {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.6);
+            transform: translateX(-100%);
+            transition: all .3s ease-in-out .1s;
+            opacity: 1; }
+            main .main2 .main2-bottom .main2-right div .yiru .title {
+              text-align: center;
+              padding: 40px 20px 0;
+              height: 52px;
+              transform: translateX(-100%);
+              transition: all .3s ease-in-out .2s; }
+              main .main2 .main2-bottom .main2-right div .yiru .title span {
+                color: #ffe605;
+                font-size: 22px;
+                font-weight: bold; }
+            main .main2 .main2-bottom .main2-right div .yiru .fu-title {
+              text-align: center;
+              font-size: 14px;
+              width: 350px;
+              height: 36px;
+              overflow: hidden;
+              margin: 0 auto;
+              padding-top: 10px;
+              color: #fff;
+              transform: translateX(-474%);
+              transition: all .35s ease-in-out .3s; }
+            main .main2 .main2-bottom .main2-right div .yiru .prc {
+              text-align: center;
+              padding: 15px 0 10px;
+              color: #fff;
+              transform: scale(1.5);
+              transition: all .3s ease-in-out .3s; }
+              main .main2 .main2-bottom .main2-right div .yiru .prc em {
+                font-family: Arial;
+                font-size: 36px;
+                font-weight: bold; }
+            main .main2 .main2-bottom .main2-right div .yiru .yuding {
+              display: block;
+              width: 160px;
+              padding: 6px 0;
+              text-align: center;
+              color: #fff;
+              border: 1px solid #fff;
+              border-radius: 20px;
+              font-size: 20px;
+              margin: 0 auto;
+              transform: translateY(400%);
+              transition: all .45s ease-in-out .5s; }
+    main .main2 .mains-bottom .mains-left {
+      width: 232px;
+      height: 100%;
+      background-color: #8bd8ec;
+      float: left; }
+      main .main2 .mains-bottom .mains-left div {
+        padding: 21px 24px; }
+        main .main2 .mains-bottom .mains-left div section {
+          position: relative;
+          padding-left: 70px;
+          height: 79px;
+          line-height: 80px;
+          font-size: 16px;
+          color: #0c90b2;
+          border-bottom: 1px solid #a2eaf9;
+          overflow: hidden; }
+          main .main2 .mains-bottom .mains-left div section img {
+            position: absolute;
+            top: 26px;
+            left: 0; }
+          main .main2 .mains-bottom .mains-left div section span {
+            cursor: pointer;
+            color: #05a; }
+            main .main2 .mains-bottom .mains-left div section span:hover {
+              color: #f60; }
+    main .main2 .mains-bottom .mains-right {
+      float: left;
+      width: 1008px;
+      height: 364px;
+      border-top: 1px solid #f1f1f1;
+      border-bottom: 1px solid #f1f1f1;
+      overflow: hidden; }
+      main .main2 .mains-bottom .mains-right div {
+        float: left;
+        display: inline;
+        width: 474px;
+        height: 152px;
+        margin-top: 20px;
+        overflow: hidden;
+        margin-left: 20px;
+        border: 1px solid #ededed; }
+        main .main2 .mains-bottom .mains-right div img {
+          display: block;
+          float: left;
+          width: 282px;
+          height: 152px;
+          position: relative;
+          overflow: hidden; }
+        main .main2 .mains-bottom .mains-right div .yl-cont {
+          float: right;
+          width: 160px;
+          padding: 15px 15px 0;
+          overflow: hidden;
+          cursor: pointer; }
+          main .main2 .mains-bottom .mains-right div .yl-cont .title {
+            height: 44px;
+            line-height: 22px;
+            font-size: 16px;
+            overflow: hidden;
+            color: #666;
+            padding-top: 2px; }
+          main .main2 .mains-bottom .mains-right div .yl-cont .p-price-row {
+            color: #f60;
+            padding: 15px 0 8px;
+            border-bottom: 1px dashed #ccc; }
+            main .main2 .mains-bottom .mains-right div .yl-cont .p-price-row b {
+              font-size: 24px;
+              color: #f60; }
+          main .main2 .mains-bottom .mains-right div .yl-cont .other {
+            padding-top: 10px;
+            color: #999;
+            font-size: 12px; }
+            main .main2 .mains-bottom .mains-right div .yl-cont .other span:nth-child(1) {
+              float: left; }
+            main .main2 .mains-bottom .mains-right div .yl-cont .other span:nth-child(2) {
+              float: right; }
+
+footer .footer-top {
+  width: 1240px;
+  margin: 0px auto; }
+  footer .footer-top .top-tops {
+    padding: 15px 0;
+    border-bottom: 1px dotted #ccc; }
+    footer .footer-top .top-tops p {
+      float: left;
+      width: 20%;
+      height: 70px;
+      text-align: center;
+      background: url(../images/4.png) no-repeat center -10px; }
+      footer .footer-top .top-tops p span {
+        font-size: 16px;
+        color: #666;
+        display: block;
+        margin-top: 50px; }
+    footer .footer-top .top-tops p:nth-child(2) {
+      background-position: center -80px; }
+    footer .footer-top .top-tops p:nth-child(3) {
+      background-position: center -150px; }
+    footer .footer-top .top-tops p:nth-child(4) {
+      background-position: center -220px; }
+    footer .footer-top .top-tops p:nth-child(5) {
+      background-position: center -290px; }
+  footer .footer-top .top-bottom {
+    padding: 30px 0px 20px; }
+    footer .footer-top .top-bottom .first {
+      width: 13%;
+      padding-left: 0px;
+      border: none; }
+    footer .footer-top .top-bottom .last {
+      width: 13%;
+      padding-right: 0px; }
+    footer .footer-top .top-bottom dl {
+      float: left;
+      width: 18%;
+      padding: 0 2.5%;
+      border-left: solid 1px #eaeaea;
+      margin-left: -1px;
+      color: #999; }
+      footer .footer-top .top-bottom dl dt {
+        color: #333;
+        height: 32px;
+        line-height: 32px;
+        font-size: 14px;
+        font-weight: bold; }
+      footer .footer-top .top-bottom dl a {
+        height: 22px;
+        line-height: 22px;
+        display: block;
+        color: #666; }
+        footer .footer-top .top-bottom dl a:hover {
+          color: #f60; }
+      footer .footer-top .top-bottom dl .half a {
+        float: left;
+        width: 48%;
+        margin-right: 2%; }
+
+footer .footer-bottom {
+  background: #f5f5f5;
+  padding-top: 15px; }
+  footer .footer-bottom .bottom-top .container {
+    width: 1240px;
+    height: 100%;
+    margin: 0 auto; }
+    footer .footer-bottom .bottom-top .container .gray-a {
+      position: relative;
+      line-height: 20px;
+      color: #333;
+      font-size: 12px;
+      position: relative; }
+      footer .footer-bottom .bottom-top .container .gray-a a {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        background: url("../images/1.png") no-repeat -115px 0;
+        cursor: pointer; }
+      footer .footer-bottom .bottom-top .container .gray-a .active {
+        background-position: -115px -20px; }
+    footer .footer-bottom .bottom-top .container ul {
+      display: none;
+      line-height: 20px;
+      margin-top: 10px;
+      padding: 10px 0;
+      color: #999;
+      border-top: solid 1px #eaeaea;
+      overflow: hidden; }
+      footer .footer-bottom .bottom-top .container ul li {
+        padding: 0 48px 0 138px;
+        overflow: hidden;
+        position: relative;
+        font-size: 12px; }
+        footer .footer-bottom .bottom-top .container ul li label {
+          margin-left: -138px;
+          line-height: 20px;
+          color: #999;
+          float: left; }
+        footer .footer-bottom .bottom-top .container ul li a {
+          color: #999;
+          margin-right: 8px;
+          white-space: nowrap; }
+          footer .footer-bottom .bottom-top .container ul li a:hover {
+            color: #f60; }
+  footer .footer-bottom .bottoms {
+    width: 100%;
+    line-height: 24px;
+    font: 12px/24px tahoma,simsun,sans-serif,"å®‹ä½“";
+    text-align: center;
+    padding: 12px 0 32px;
+    margin-top: 10px;
+    border-top: solid 1px #ccc;
+    overflow: hidden; }
+    footer .footer-bottom .bottoms .bottoms-top a {
+      color: #666;
+      padding: 0 8px; }
+      footer .footer-bottom .bottoms .bottoms-top a:hover {
+        color: #f60; }
+    footer .footer-bottom .bottoms .bottoms-top p {
+      color: #666; }
+      footer .footer-bottom .bottoms .bottoms-top p a:hover {
+        color: #666;
+        text-decoration: underline; }
+    footer .footer-bottom .bottoms .bottoms-top div a img {
+      display: inline-block;
+      height: 34px;
+      margin: 8px 0px 0; }
+
+.fin {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; }
+  .fin .fin-left {
+    cursor: pointer;
+    position: fixed;
+    bottom: 35px;
+    left: -220px; }
+  .fin .fin-right {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 140px;
+    background-color: #263239;
+    opacity: .96; }
+    .fin .fin-right .xuanz {
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      position: absolute;
+      top: 5px;
+      right: 60px;
+      font-family: Simsun;
+      font-size: 48px;
+      color: #526b78;
+      text-align: center;
+      font-weight: normal;
+      font-style: normal;
+      cursor: pointer;
+      transition: all 300ms; }
+      .fin .fin-right .xuanz:hover {
+        transform: rotate(180deg); }
+    .fin .fin-right img {
+      position: absolute;
+      top: -38px;
+      width: 50%;
+      display: block;
+      vertical-align: top;
+      outline: none;
+      border: none; }
+    .fin .fin-right .form {
+      position: absolute;
+      left: 680px;
+      top: 0; }
+      .fin .fin-right .form .form-left {
+        float: left;
+        padding-top: 15px; }
+        .fin .fin-right .form .form-left .downtip {
+          display: none;
+          position: absolute;
+          left: 0;
+          top: 0;
+          background-color: #fff;
+          width: 171px;
+          height: 28px;
+          border: 1px solid #282828;
+          margin-top: 10px;
+          padding-left: 41px;
+          line-height: 28px;
+          color: #ff9913;
+          font-size: 14px;
+          font-weight: 500; }
+          .fin .fin-right .form .form-left .downtip .downtip-left {
+            width: 28px;
+            height: 10px;
+            position: absolute;
+            left: 20px;
+            top: 27px;
+            background: url(../images/31.png) no-repeat;
+            background-position: -35px -7px; }
+          .fin .fin-right .form .form-left .downtip .downtip-true {
+            width: 18px;
+            height: 19px;
+            background: url(../images/31.png) no-repeat;
+            background-position: 0px 0px;
+            position: absolute;
+            left: 10px;
+            top: 5px; }
+          .fin .fin-right .form .form-left .downtip .downtip-false {
+            width: 17px;
+            height: 15px;
+            background: url(../images/31.png) no-repeat;
+            background-position: -18px -1px;
+            position: absolute;
+            left: 12px;
+            top: 5px; }
+        .fin .fin-right .form .form-left p {
+          color: #ffe70a;
+          line-height: 22px; }
+        .fin .fin-right .form .form-left input {
+          display: block;
+          width: 194px;
+          height: 24px;
+          padding: 5px 10px;
+          line-height: 24px;
+          background-color: #fff;
+          margin: 10px 0px;
+          border: none; }
+        .fin .fin-right .form .form-left a {
+          display: inline-block;
+          height: 36px;
+          line-height: 35px;
+          padding: 0 17px;
+          border-radius: 1px;
+          background-color: #f95800;
+          color: #fff;
+          font-size: 14px; }
+      .fin .fin-right .form .form-right {
+        padding-left: 80px;
+        float: left;
+        padding-top: 15px; }
+        .fin .fin-right .form .form-right p {
+          color: #ffe70a;
+          line-height: 22px; }
+        .fin .fin-right .form .form-right a {
+          display: block;
+          width: 140px;
+          height: 28px;
+          border: 1px solid #4a5459;
+          text-indent: -9999px;
+          margin-top: 10px;
+          background-position: -1px -1px;
+          background: url(../images/30.png) no-repeat; }
+        .fin .fin-right .form .form-right a:nth-child(3) {
+          background-position: -1px -32px; }

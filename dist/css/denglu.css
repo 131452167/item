@@ -1,0 +1,215 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre,
+form, fieldset, input, textarea, p, blockquote, th, td {
+  padding: 0;
+  margin: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+fieldset, img {
+  border: 0; }
+
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-weight: normal;
+  font-style: normal; }
+
+ol, ul, li {
+  list-style: none; }
+
+caption, th {
+  text-align: left; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  font-size: 100%; }
+
+q:before, q:after {
+  content: ''; }
+
+abbr, acronym {
+  border: 0; }
+
+a {
+  text-decoration: none; }
+
+.clearFix::after {
+  content: '';
+  display: block;
+  clear: both; }
+
+body {
+  background: #fafafa; }
+  body .wrap {
+    width: 990px;
+    margin: 0px auto; }
+    body .wrap nav {
+      margin: 10px auto 26px auto; }
+      body .wrap nav a img {
+        display: block;
+        float: left; }
+      body .wrap nav b {
+        float: left;
+        width: 1px;
+        height: 30px;
+        background: #e3e3e3;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 22px; }
+      body .wrap nav span {
+        color: #666;
+        float: left;
+        width: 200px;
+        font-size: 30px;
+        line-height: 74px; }
+    body .wrap main .main-left {
+      float: left;
+      width: 613px; }
+      body .wrap main .main-left img {
+        width: 613px;
+        height: 360px; }
+    body .wrap main .main-right {
+      float: right;
+      width: 375px;
+      background-color: #EBEBEB; }
+      body .wrap main .main-right .main-right-box {
+        padding-bottom: 10px;
+        width: 363px;
+        border: 1px solid #E0E0E0;
+        margin: 5px;
+        background-color: #fff; }
+        body .wrap main .main-right .main-right-box .main-top {
+          width: 100%;
+          height: 41px;
+          border-bottom: 1px solid #DDDDDD; }
+          body .wrap main .main-right .main-right-box .main-top span {
+            float: left;
+            margin: 0 33px;
+            display: block;
+            position: relative;
+            font-size: 16px;
+            cursor: pointer;
+            line-height: 41px;
+            color: #666; }
+            body .wrap main .main-right .main-right-box .main-top span b {
+              position: absolute;
+              bottom: -2px;
+              left: 0;
+              width: 100%;
+              height: 4px;
+              background-color: #FE9900;
+              display: none; }
+        body .wrap main .main-right .main-right-box .margin-bottom:nth-child(1) {
+          display: block; }
+        body .wrap main .main-right .main-right-box .main-bottom .main-bottom-box:nth-child(1) {
+          display: block; }
+        body .wrap main .main-right .main-right-box .main-bottom .main-bottom-box {
+          display: none;
+          margin: 33px 0 0 29px; }
+          body .wrap main .main-right .main-right-box .main-bottom .main-bottom-box .spn {
+            width: 290px;
+            height: 25px;
+            line-height: 25px;
+            margin-left: 40px;
+            position: relative;
+            z-index: 0;
+            font-size: 12px; }
+            body .wrap main .main-right .main-right-box .main-bottom .main-bottom-box .spn i {
+              display: inline-block;
+              vertical-align: middle;
+              width: 23px;
+              height: 22px;
+              margin-right: 5px;
+              background: url(../images/dlfs.gif) no-repeat;
+              background-position: 0 0; }
+              body .wrap main .main-right .main-right-box .main-bottom .main-bottom-box .spn i:hover {
+                background-position: 0px -23px; }
+            body .wrap main .main-right .main-right-box .main-bottom .main-bottom-box .spn i:nth-child(2) {
+              background-position: -31px 0; }
+              body .wrap main .main-right .main-right-box .main-bottom .main-bottom-box .spn i:nth-child(2):hover {
+                background-position: -31px -23px; }
+            body .wrap main .main-right .main-right-box .main-bottom .main-bottom-box .spn i:nth-child(3) {
+              background-position: -62px 0; }
+              body .wrap main .main-right .main-right-box .main-bottom .main-bottom-box .spn i:nth-child(3):hover {
+                background-position: -62px -23px; }
+            body .wrap main .main-right .main-right-box .main-bottom .main-bottom-box .spn i:nth-child(4) {
+              background-position: -93px 0; }
+              body .wrap main .main-right .main-right-box .main-bottom .main-bottom-box .spn i:nth-child(4):hover {
+                background-position: -93px -23px; }
+          body .wrap main .main-right .main-right-box .main-bottom .main-bottom-box div {
+            width: 290px;
+            height: 25px;
+            line-height: 25px;
+            margin-left: 40px;
+            font-size: 12px;
+            position: relative;
+            z-index: 0; }
+            body .wrap main .main-right .main-right-box .main-bottom .main-bottom-box div a {
+              color: #0055aa; }
+          body .wrap main .main-right .main-right-box .main-bottom .main-bottom-box .inp {
+            width: 232px;
+            height: 34px;
+            line-height: 34px;
+            margin: 0px 0 10px 69px;
+            font-size: 18px;
+            color: #fff;
+            cursor: pointer;
+            outline: none;
+            border: none;
+            box-shadow: none;
+            background-color: #FF9900;
+            border-radius: 2px; }
+          body .wrap main .main-right .main-right-box .main-bottom .main-bottom-box .p2 {
+            width: 240px;
+            height: 34px;
+            line-height: 34px;
+            margin-left: 70px;
+            font-size: 12px;
+            padding: 0px; }
+            body .wrap main .main-right .main-right-box .main-bottom .main-bottom-box .p2 input {
+              width: 13px;
+              height: 13px;
+              margin-top: 12px; }
+            body .wrap main .main-right .main-right-box .main-bottom .main-bottom-box .p2 label {
+              width: 119px;
+              font-size: 12px; }
+            body .wrap main .main-right .main-right-box .main-bottom .main-bottom-box .p2 span {
+              display: inline-block;
+              margin-left: 30px;
+              color: #0054a9; }
+          body .wrap main .main-right .main-right-box .main-bottom .main-bottom-box .p1 {
+            padding: 0px; }
+            body .wrap main .main-right .main-right-box .main-bottom .main-bottom-box .p1 input {
+              width: 90px; }
+            body .wrap main .main-right .main-right-box .main-bottom .main-bottom-box .p1 span {
+              display: block;
+              float: left;
+              color: #0054a9;
+              margin-left: 10px;
+              font-size: 12px;
+              text-decoration: none;
+              margin-top: 7px; }
+          body .wrap main .main-right .main-right-box .main-bottom .main-bottom-box p {
+            position: relative;
+            padding-bottom: 10px;
+            width: 100%;
+            overflow: hidden; }
+            body .wrap main .main-right .main-right-box .main-bottom .main-bottom-box p label {
+              float: left;
+              width: 55px;
+              height: 34px;
+              line-height: 34px;
+              padding-right: 10px;
+              font-size: 16px;
+              text-align: right;
+              color: #666; }
+            body .wrap main .main-right .main-right-box .main-bottom .main-bottom-box p input {
+              outline: none;
+              float: left;
+              width: 220px;
+              height: 22px;
+              line-height: 22px;
+              padding: 5px;
+              border: 1px solid #CDCDCD;
+              font-size: 14px;
+              margin-bottom: 5px; }
